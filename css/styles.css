@@ -1,0 +1,21 @@
+body{
+    padding-left: 10px;
+    background-color: rgb(189, 189, 189);
+}
+button{
+    margin: 5px 5px 5px 5px;
+}
+#calculadora{
+    width: 170px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    background-color: rgb(156, 156, 156);
+
+}
+#botons{
+    align-items: center;
+}
+#pantalla{
+    width: 150px;
+}
