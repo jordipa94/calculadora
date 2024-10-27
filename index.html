@@ -34,7 +34,7 @@
 
       <input id="pantalla" readonly>
 
-      <div id="botons"><br>
+      <div style="padding-top: 10px;" id="botons">
 
         <button onclick="seleccionar('1')">1</button>
         <button onclick="seleccionar('2')">2</button>
@@ -49,9 +49,11 @@
         <button onclick="seleccionar('9')">9</button>
         <button onclick="seleccionar('*')">*</button><br>
         <button onclick="seleccionar('0')">0</button>
+        <button onclick="llimpiarPantalla()">,</button>
         <button onclick="llimpiarPantalla()">C</button>
-        <button onclick="calcular()">=</button>
-        <button onclick="seleccionar('/')">/</button>
+        <button onclick="seleccionar('/')">/</button><br>
+        <button style="margin-left: 78px;" onclick="seleccionar('/')">&laquo;</button>
+        <button style="margin-left: 4px;" onclick="calcular()">=</button>
 
       </div>
 
