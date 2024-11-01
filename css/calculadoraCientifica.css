@@ -1,0 +1,37 @@
+button{
+    cursor: pointer;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+
+    background-color: rgb(90, 90, 90);
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+#calculadora{
+    width: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    background-color: rgb(50, 50, 50);
+
+}
+#botons{
+    align-items: center;
+}
+.operador{
+    background-color: rgb(130, 130, 130);
+}
+#pantalla{
+    font-weight: bold;
+    font-size: 30px;
+    background-color: gray;
+    color: white;
+
+    width: 380px;
+    height: 50px;
+}

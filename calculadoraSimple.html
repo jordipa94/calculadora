@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Calculadora Simple</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief page description">
-    <meta name="keywords" content="html,cheatsheet"/>
-    <meta property="fb:admins" content="YourFacebookUsername"/>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora Simple</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief page description">
+  <meta name="keywords" content="html,cheatsheet"/>
+  <meta property="fb:admins" content="YourFacebookUsername"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/normalised.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/calculadoraSimple.css">
-<!-- Prepare for second course --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-<!-- If we use bootstrap
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/normalised.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/calculadoraSimple.css">
+  <!-- Prepare for second course --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+  <!-- If we use bootstrap
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- -->
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  -->
 </head>
 
 <body> 
 
+  <div>
+
+    <a style="font-size: 20px;" href="index.html">&lt;</a>
+
     <h2>Calculadora Simple</h2>
+
+  </div>
 
     <div id="calculadora">
 
       <input id="pantalla" readonly>
 
-      <div style="padding-top: 10px;" id="botons">
+      <div style="padding-top: 10px;padding-bottom: 10px;" id="botons">
 
         <button onclick="seleccionar('1')">1</button>
         <button onclick="seleccionar('2')">2</button>
         <button onclick="seleccionar('3')">3</button>
-        <button onclick="seleccionar('+')">+</button><br>
+        <button class="operador" onclick="seleccionar('+')">+</button>
         <button onclick="seleccionar('4')">4</button>
         <button onclick="seleccionar('5')">5</button>
         <button onclick="seleccionar('6')">6</button>
-        <button onclick="seleccionar('-')">-</button><br>
+        <button class="operador" onclick="seleccionar('-')">-</button>
         <button onclick="seleccionar('7')">7</button>
         <button onclick="seleccionar('8')">8</button>
         <button onclick="seleccionar('9')">9</button>
-        <button onclick="seleccionar('*')">*</button><br>
+        <button class="operador" onclick="seleccionar('*')">*</button>
         <button onclick="seleccionar('0')">0</button>
         <button onclick="seleccionar('.')">.</button>
-        <button onclick="llimpiarPantalla()">C</button>
-        <button onclick="seleccionar('/')">/</button><br>
-        <button style="margin-left: 110px;" onclick="calcular()">=</button>
+        <button onclick="calcular()">=</button>
+        <button class="operador" onclick="seleccionar('/')">/</button>
+        <button class="operador" style="margin-left: 192px;" onclick="borrarDigit()">&lt;</button>
+        <button class="operador" onclick="llimpiarPantalla()">C</button>
 
       </div>
 
     </div><br>
-
-    <a href="index.html">Anar al Index</a>
 
     <script src="javascripts/calculadoraSimple.js"></script>
 

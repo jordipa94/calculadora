@@ -20,3 +20,9 @@ function calcular(){
         pantalla.value = "ERROR";
     }
 }
+
+function borrarDigit(){
+
+    pantalla.value = pantalla.value.slice(0,-1);
+
+}
