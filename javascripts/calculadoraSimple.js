@@ -1,9 +1,17 @@
-const pantalla = document.getElementById("pantalla"); 
+const pantalla = document.getElementById("pantalla");
+//const maxLlargada = 5;
 
 function seleccionar(input){
 
     pantalla.value += input;
 
+    // LLARGA MAXIMA DE 5 DIGITS.
+
+    /*if(pantalla.value.length<maxLlargada){
+        pantalla.value += input;
+    }else{
+        alert("Llargada maxima de 5 digits.");
+    }*/
 }
 
 function llimpiarPantalla(){
