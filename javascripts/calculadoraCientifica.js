@@ -14,6 +14,14 @@ function calcularArrel(input){
 
 }
 
+function calcularLog(input){
+
+    let valorLog = Math.log10(pantalla.value);
+
+    pantalla.value = valorLog;
+
+}
+
 function elevarNum(input){
 
     let valorElevat = (pantalla.value*pantalla.value);
