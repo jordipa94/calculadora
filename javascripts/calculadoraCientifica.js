@@ -22,6 +22,22 @@ function calcularLog(input){
 
 }
 
+function calcularCos(input){
+
+    let valorCos = Math.cos(pantalla.value);
+
+    pantalla.value = valorCos;
+
+}
+
+function calcularTan(input){
+
+    let valorTan = Math.tan(pantalla.value);
+
+    pantalla.value = valorTan;
+
+}
+
 function elevarNum(input){
 
     let valorElevat = (pantalla.value*pantalla.value);
